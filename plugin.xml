@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="cordova-plugin-native-logger"
+        version="1.0.0"
+        xmlns="http://apache.org/cordova/ns/plugins"
+        xmlns:ios="http://apache.org/cordova/ns/plugins/ios">
+
+    <name>Native Logger</name>
+    <description>Captures native iOS logs and crash info, sends them to JS</description>
+    <license>Apache-2.0</license>
+    <keywords>cordova, ios, logger, crash</keywords>
+    <js-module src="www/nativeLogger.js" name="NativeLogger">
+        <clobbers target="NativeLogger" />
+    </js-module>
+
+    <platform name="ios">
+	
+	<config-file target="config.xml" parent="/*">
+            <feature name="NativeLogger">
+                <param name="ios-package" value="NativeLogger" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+		
+        <source-file src="src/ios/NativeLogger.m" />
+    </platform>
+</plugin>
