@@ -1,0 +1,31 @@
+{
+    "name": "cordova-plugin-native-logger",
+    "version": "1.0.0",
+    "description": "Cordova plugin to capture iOS native logs and crashes, and forward them to JavaScript.",
+    "cordova": {
+      "id": "cordova-plugin-native-logger",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/ramesh0452/cordova-plugin-native-logger.git"
+    },
+    "keywords": [
+      "cordova",
+      "cordova-ios",
+      "ios",
+      "logger",
+      "crash",
+      "native",
+      "plugin"
+    ],
+    "author": "Ramesh",
+    "license": "Apache-2.0",
+    "bugs": {
+      "url": "https://github.com/ramesh0452/cordova-plugin-native-logger/issues"
+    },
+    "homepage": "https://github.com/ramesh0452/cordova-plugin-native-logger#readme"
+  }
+  
